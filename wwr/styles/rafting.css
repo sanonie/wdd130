@@ -1,0 +1,145 @@
+:root {
+    --background: #f0f0f0;
+    --primary: #219ebc;
+    --secondary: #023047;
+    --ascent1: #8ecae6;
+    --ascent2: #219ebc;
+    --ascent3: #fb8500;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary);
+    font-size: 2.5em;
+    text-align: left;
+}
+
+p {
+    color: var(--secondary);
+    font-size: 1em;
+    text-align: start;
+}
+
+.hero {
+    background-color: var(--primary);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;    
+    border-radius: 10px;
+}
+
+nav {
+    background-color: var(--background);
+    color: var(--background);
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    margin: 0 10px;
+    padding: 0 auto;
+    text-align: center;
+}
+
+nav ul li a {
+    color: var(--ascent3);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--ascent3);
+}
+
+nav ul li a:active {
+    color: var(--ascent2);
+}
+
+a {
+    color: var(--ascent3);
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.second-image-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+}
+
+.second-image-container .third-image {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+.second-image-container .third-image-title {
+    position: absolute;
+    top: 120px; /* Adjust the position as needed */
+    right: 10px;
+    color: var(--secondary);
+    background-color: var(--background);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* CSS for social images */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
