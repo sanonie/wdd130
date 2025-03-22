@@ -22,7 +22,7 @@ h5,
 h6 {
     color: var(--primary);
     font-size: 2.5em;
-    text-align: left;
+    text-align: center;
 }
 
 p {
@@ -43,17 +43,32 @@ p {
     font-size: 2em;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
 }
 
-.hero img {
+.hero img.hero-image {
     display: block;
     width: 100%;    
     border-radius: 10px;
+}
+
+.second-image-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+}
+
+.second-image-container .third-image {
+    width: 100px;
+    height: auto;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
 }
 
 nav {
@@ -106,39 +121,13 @@ img {
     padding: 10px;
 }
 
-.second-image-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 150px;
-}
-
-.second-image-container .third-image {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
-    border: 2px solid var(--primary);
-    border-radius: 5px;
-}
-
-.second-image-container .third-image-title {
-    position: absolute;
-    top: 120px; /* Adjust the position as needed */
-    right: 10px;
-    color: var(--secondary);
-    background-color: var(--background);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-/* CSS for social images */
-.social {
+ .social{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-
-.social img {
+.img {
     width: 30px;
     height: 30px;
     display: block;
