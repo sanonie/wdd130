@@ -457,11 +457,11 @@ section ul li::marker {
 .nav-flex a {
     margin: 5px 10px;
     color: #023047;
-    padding: 4 auto;
+    padding: 4px;
 }
 
 .nav-flex a:hover {
-    text-decoration: underline;
+    text-decoration: tomato;
 }
 
 .nav-flex a:active {
@@ -469,7 +469,7 @@ section ul li::marker {
 }
 
 .nav-flex .active {
-    text-decoration: underline;
+    text-decoration: tomato;
     font-weight: bold;
 }
 
@@ -504,7 +504,7 @@ article ul li::marker {
 
 article img {
     width: 45%;
-    height: 250;
+    height: 250px;
     border-radius: 10px;
     position: relative;
     justify-content: center;
